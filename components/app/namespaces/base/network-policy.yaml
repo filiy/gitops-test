@@ -2,7 +2,6 @@ apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
   name: allow-from-same-namespace
-  namespace: int-pr-fc-cumulus
 spec:
   ingress:
   - from:
@@ -13,7 +12,6 @@ apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
   name: allow-from-openshift-ingress
-  namespace: int-pr-fc-cumulus
 spec:
   ingress:
   - from:
@@ -28,7 +26,6 @@ apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
   name: deny-by-default
-  namespace: int-pr-fc-cumulus
 spec:
   ingress: []
   podSelector: {}
@@ -37,7 +34,6 @@ apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
   name: allow-from-openshift-monitoring
-  namespace: int-pr-fc-cumulus
 spec:
   ingress:
   - from:
