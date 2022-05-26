@@ -8,5 +8,4 @@ resources:
 - namespace-ircc-openshift-amq-broker.yaml
 - amq-broker-operatorgroup.yaml
 - amq-broker-subscription.yaml
-- amq-broker-route.yaml
 - amq-broker-instance.yaml
