@@ -4,4 +4,4 @@ metadata:
   name: namespaces
 spec:
   source:
-    path: environments/dev/namespaces
+    path: environments/dev/app/namespaces/overlays
