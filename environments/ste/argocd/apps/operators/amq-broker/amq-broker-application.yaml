@@ -1,0 +1,7 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: amq-broker
+spec:
+  source:
+    path: environments/ste/app/operators/overlays/amq-broker
