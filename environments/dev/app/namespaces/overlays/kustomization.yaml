@@ -2,7 +2,7 @@ kind: Kustomization
 apiVersion: kustomize.config.k8s.io/v1beta1
 
 bases:
-- ../../../../../../components/app/namespace/base
+- ../../../../../components/app/namespace/base
 
 patchesStrategicMerge:
 - phil-project1.yaml
