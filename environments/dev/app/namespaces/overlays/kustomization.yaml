@@ -5,6 +5,4 @@ bases:
 - ../../../../../components/app/namespaces/base
 
 patches:
-  - path: ./phil-project1.yaml
-    target:
-      namespace: phil-project1
+- ns.yaml
