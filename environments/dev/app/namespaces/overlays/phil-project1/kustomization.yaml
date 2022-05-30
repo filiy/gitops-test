@@ -5,5 +5,6 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 bases:
 - ../../../../../../components/app/namespaces/small
 
-patches:
-- ns.yaml
+resources:
+- phil-project1.yaml
+
