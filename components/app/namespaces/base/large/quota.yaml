@@ -4,7 +4,7 @@ metadata:
  name: project-quota
 spec:
   hard:
-    pods: "30" 
+    pods: "100" 
     requests.cpu: "8" 
     requests.memory: 24Gi 
     limits.cpu: "12" 
