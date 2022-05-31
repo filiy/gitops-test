@@ -2,4 +2,5 @@ kind: Kustomization
 apiVersion: kustomize.config.k8s.io/v1beta1
 
 resources:
-  - phil-project1
+- ../base/network-policy.yaml
+- quota.yaml
