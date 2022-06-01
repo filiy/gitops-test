@@ -15,7 +15,6 @@ spec:
   source:
     path: components/app/namespaces/base
     repoURL: 'https://github.com/filiy/gitops-test'
-    recurse: false
     targetRevision: HEAD
   syncPolicy:
     automated:
