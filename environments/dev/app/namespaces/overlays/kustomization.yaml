@@ -3,3 +3,4 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 
 resources:
   - phil-project1
+  - phil-project2
