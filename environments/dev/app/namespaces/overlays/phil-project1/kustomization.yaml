@@ -1,12 +1,10 @@
 kind: Kustomization
 apiVersion: kustomize.config.k8s.io/v1beta1
 
-namespace: phil-project1
 
 bases:
-- ../../../../../../components/app/namespaces/base/limit-range.yaml
-- ../../../../../../components/app/namespaces/base/network-policy.yaml
-- ../../../../../../components/app/namespaces/base/quota-medium.yaml
+- ../../../../../../components/app/namespaces/small
 
 resources:
 - phil-project1.yaml
+
