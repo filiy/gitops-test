@@ -1,10 +1,10 @@
 kind: Kustomization
 apiVersion: kustomize.config.k8s.io/v1beta1
 
+namespace: phil-project1.yaml
 
 bases:
-- ../../../../../../components/app/namespaces/small
+- ../../../../../../components/app/namespaces/base
 
 resources:
 - phil-project1.yaml
-
