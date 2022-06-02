@@ -5,4 +5,4 @@ metadata:
   namespace: openshift-gitops
 spec:
   source:
-    path: environments/dev/app/operators/namespace-config
+    path: environments/dev/app/operators/overlays/namespace-config
