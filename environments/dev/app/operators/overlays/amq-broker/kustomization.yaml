@@ -1,0 +1,8 @@
+kind: Kustomization
+apiVersion: kustomize.config.k8s.io/v1beta1
+
+bases:
+- ../../../../../../components/app/operators/amq-broker/base
+
+patchesStrategicMerge:
+- amq-broker-route.yaml
