@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1
 kind: Application
 metadata:
-  name: namespaces
+  name: namespace-config-operator
   namespace: openshift-gitops
 spec:
   source:
