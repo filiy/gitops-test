@@ -14,7 +14,7 @@ spec:
   project: default
   source:
     path: components/app/namespaces/base
-    repoURL: 'https://github.com/filiy/gitops-test'
+    repoURL: 'https://github.com/filiy/gitops-test.git'
     targetRevision: HEAD
   syncPolicy:
     automated:
