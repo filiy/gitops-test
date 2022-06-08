@@ -1,0 +1,7 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: namespace-configuration-operator
+  labels:
+    ircc.gc.ca/environment: dev
+spec: {}
