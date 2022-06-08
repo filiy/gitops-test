@@ -5,4 +5,3 @@ resources:
 - ../../../../../components/argocd/apps/operators/amq-broker/base
 - ../../../../../components/argocd/apps/operators/pipelines/base
 - ../../../../../environments/dev/argocd/apps/operators/namespace-config
-- ../../../../../environments/dev/argocd/apps/namespaces
