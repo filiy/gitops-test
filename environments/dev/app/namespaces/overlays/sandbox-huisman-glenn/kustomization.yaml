@@ -1,0 +1,11 @@
+kind: Kustomization
+apiVersion: kustomize.config.k8s.io/v1beta1
+
+namespace: sandbox-huisman-glenn
+
+bases:
+- ../../../../../../components/app/namespaces/small
+
+resources:
+- sandbox-huisman-glenn.yaml
+
