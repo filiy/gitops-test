@@ -55,6 +55,7 @@ spec:
     policy: |
       g, system:cluster-admins, role:admin
       g, cluster-admins, role:admin
+      g, test-admins, role:admin
     scopes: '[groups]'
   repo:
     resources:
