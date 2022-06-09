@@ -1,0 +1,11 @@
+kind: Kustomization
+apiVersion: kustomize.config.k8s.io/v1beta1
+
+namespace: eso-sandbox-boudreault-martin
+
+bases:
+- ../../../../../../components/app/namespaces/small
+
+resources:
+- eso-sandbox-boudreault-martin.yaml
+
