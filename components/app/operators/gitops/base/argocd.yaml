@@ -74,7 +74,7 @@ spec:
       - TaskRun
       - PipelineRun
   dex:
-    openShiftOAuth: false
+    openShiftOAuth: true
     resources:
       limits:
         cpu: 500m
