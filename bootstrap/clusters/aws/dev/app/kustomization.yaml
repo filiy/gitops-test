@@ -4,6 +4,6 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 resources:
 - ../../../../../components/argocd/apps/operators/amq-broker/base
 - ../../../../../components/argocd/apps/operators/pipelines/base
-- ../../../../../components/argocd/apps/operators/gitops/base
+- ../../../../../environments/dev/argocd/apps/operators/gitops
 - ../../../../../environments/dev/argocd/apps/operators/namespace-config
 - ../../../../../environments/dev/argocd/apps/namespaces
