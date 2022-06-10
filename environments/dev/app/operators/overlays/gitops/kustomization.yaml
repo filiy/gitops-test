@@ -6,3 +6,4 @@ bases:
 
 patchesStrategicMerge:
 - appproject-phil-project1.yaml
+- appproject-phil-project2.yaml
