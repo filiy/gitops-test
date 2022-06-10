@@ -6,4 +6,3 @@ commonAnnotations:
 
 resources:
 - argocd.yaml
-- appproject-phil-project1.yaml
