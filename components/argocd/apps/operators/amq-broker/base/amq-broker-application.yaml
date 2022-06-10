@@ -15,7 +15,7 @@ spec:
   source:
     path: /amq-broker-operator/overlays/amq-broker-7.x
     repoURL: 'https://github.com/davidgaulin/tmp-gitops-catalog.git'
-    targetRevision: HEAD
+    targetRevision: amq-broker-7.x
   syncPolicy:
     automated:
       selfHeal: true
