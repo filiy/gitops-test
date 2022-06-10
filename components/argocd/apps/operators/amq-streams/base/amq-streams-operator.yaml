@@ -15,7 +15,7 @@ spec:
   source:
     path: /amq-streams-operator/operator/overlays/amq-streams-2.1.x
     repoURL: 'https://github.com/davidgaulin/tmp-gitops-catalog.git'
-    targetRevision: HEAD
+    targetRevision: amq-broker-7.x
   syncPolicy:
     automated:
       selfHeal: true
