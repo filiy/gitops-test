@@ -1,0 +1,11 @@
+kind: Kustomization
+apiVersion: kustomize.config.k8s.io/v1beta1
+
+namespace: rh-sandbox-thomson-phil
+
+bases:
+- ../../../../../../components/app/namespaces/small
+
+resources:
+- rh-sandbox-thomson-phil.yaml
+

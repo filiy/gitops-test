@@ -1,0 +1,8 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: eso-sandbox-sullivan-michael
+  labels:
+    ircc.gc.ca/environment: dev
+    ircc.gc.ca/team: ircc-integration
+spec: {}
