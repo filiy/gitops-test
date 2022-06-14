@@ -2,14 +2,14 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: pipelines
-  namespace: openshift-gitops
+  namespace: openshift-operators
   annotations:
     argocd.argoproj.io/sync-wave: "20"
   labels:
     gitops.ownedBy: cluster-config  
 spec:
   destination:
-    namespace: openshift-gitops
+    namespace: openshift-operators
     server: 'https://kubernetes.default.svc'
   project: default
   source:
