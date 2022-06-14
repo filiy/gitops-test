@@ -2,4 +2,6 @@ kind: Kustomization
 apiVersion: kustomize.config.k8s.io/v1beta1
 
 resources:
+- namespace-ircc-openshift-amq-broker.yaml
 - amq-broker-application.yaml
+- amq-broker-instance.yaml
