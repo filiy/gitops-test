@@ -13,7 +13,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   project: default
   source:
-    path: openshift-pipelines-operator/overlays/latest/
+    path: openshift-pipelines-operator/overlays/1.7/
     repoURL: 'https://github.com/davidgaulin/tmp-gitops-catalog.git'
     targetRevision: HEAD
   syncPolicy:
