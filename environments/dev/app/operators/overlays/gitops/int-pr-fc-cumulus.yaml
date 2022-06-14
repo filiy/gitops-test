@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: int-pr-fc-cumulus
+spec:
+  destinations:
+  - namespace: int-pr-fc-cumulus
+    server: '*'
+  sourceRepos:
+  - https://github.com/davidgaulin/tmp-int-pr-fc-cumulus/
+  roles:
+  - name: int-pr-fc-cumulus-admin
+    groups:
+    - int-pr-fc-cumulus
+    policies:
+    - p, proj:int-pr-fc-cumulus:int-pr-fc-cumulus-admin, applications, *, int-pr-fc-cumulus/*, allow
