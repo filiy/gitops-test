@@ -1,6 +1,12 @@
 kind: Kustomization
 apiVersion: kustomize.config.k8s.io/v1beta1
 
+kind: Kustomization
+apiVersion: kustomize.config.k8s.io/v1beta1
+
 resources:
-- ../../../../../environments/ste/argocd/apps/operators/nexus
-- ../../../../../components/argocd/apps/tekton/fuse-microservice-pipeline/base
+- ../../../../../environments/ste/argocd/apps/namespaces
+- ../../../../../environments/ste/argocd/apps/operators/gitops
+- ../../../../../environments/ste/app/operators/overlays/amq-broker
+
+
