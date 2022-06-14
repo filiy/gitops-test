@@ -2,8 +2,7 @@ kind: Kustomization
 apiVersion: kustomize.config.k8s.io/v1beta1
 
 resources:
-- ../../../../../environment/dev/app/operators/overlays/amq-broker/
+- ../../../../../environments/dev/app/operators/overlays/amq-broker
 - ../../../../../components/argocd/apps/operators/pipelines/base
 - ../../../../../environments/dev/argocd/apps/operators/gitops
-- ../../../../../environments/dev/argocd/apps/operators/namespace-config
 - ../../../../../environments/dev/argocd/apps/namespaces
