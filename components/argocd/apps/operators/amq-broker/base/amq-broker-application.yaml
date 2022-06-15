@@ -2,20 +2,20 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: amq-broker-operator
-  namespace: ircc-openshift-amq-broker
+  namespace: openshift-operators
   annotations:
     argocd.argoproj.io/sync-wave: "20"
   labels:
     gitops.ownedBy: cluster-config  
 spec:
   destination:
-    namespace: ircc-openshift-amq-broker
+    namespace: openshift-operators
     server: 'https://kubernetes.default.svc'
   project: default
   source:
-    path: /amq-broker-operator/overlays/amq-broker-7.x
-    repoURL: 'https://github.com/davidgaulin/tmp-gitops-catalog.git'
-    targetRevision: amq-broker-7.x
+    path: components/app/operators/amq-broker/base
+    repoURL: 'https://github.com/filiy/gitops-test.git'
+    targetRevision: HEAD
   syncPolicy:
     automated:
       selfHeal: true

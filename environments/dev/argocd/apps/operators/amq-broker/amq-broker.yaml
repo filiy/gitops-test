@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: amq-broker-operator
-  namespace: ircc-openshift-amq-broker
+  namespace: openshift-operators
 spec:
   source:
     path: environments/dev/app/operators/overlays/amq-broker
