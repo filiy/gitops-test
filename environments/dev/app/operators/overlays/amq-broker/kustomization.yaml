@@ -2,7 +2,7 @@ kind: Kustomization
 apiVersion: kustomize.config.k8s.io/v1beta1
 
 bases:
-- ../../../../../../components/argocd/apps/operators/amq-broker/base
+- ../../../../../../components/app/operators/amq-broker/base
 
 resources:
 - role-binding-developers-group.yaml
