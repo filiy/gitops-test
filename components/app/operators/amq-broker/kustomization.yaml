@@ -1,0 +1,7 @@
+kind: Kustomization
+apiVersion: kustomize.config.k8s.io/v1beta1
+
+resources:
+- github.com/davidgaulin/tmp-gitops-catalog/amq-broker-operator/overlays/amq-broker-7.x?tag=amq-broker-7.x
+- namespace-ircc-openshift-amq-broker.yaml
+- amq-broker-instance.yaml
