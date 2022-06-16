@@ -1,0 +1,22 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: int-sandbox-kanumuri-subbarao
+  labels:
+    ircc.gc.ca/environment: dev
+    ircc.gc.ca/team: ircc-integration
+spec: {}
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: admin
+  namespace: int-sandbox-kanumuri-subbarao
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: admin
+subjects:
+- apiGroup: rbac.authorization.k8s.io
+  kind: Group
+  name: Developers

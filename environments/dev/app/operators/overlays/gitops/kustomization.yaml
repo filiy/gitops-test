@@ -1,0 +1,10 @@
+kind: Kustomization
+apiVersion: kustomize.config.k8s.io/v1beta1
+
+bases:
+- ../../../../../../components/app/operators/gitops/base
+
+resources:
+- appproject-phil-project1.yaml
+- appproject-phil-project2.yaml
+- int-pr-fc-cumulus.yaml

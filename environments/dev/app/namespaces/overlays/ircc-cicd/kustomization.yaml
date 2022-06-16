@@ -1,11 +1,19 @@
 kind: Kustomization
 apiVersion: kustomize.config.k8s.io/v1beta1
 
+<<<<<<< HEAD
+=======
+namespace: ircc-cicd
+
+>>>>>>> b64f1db4a71a2a87405a2e858aaadcb2aceaacd8
 bases:
 - ../../../../../../components/app/namespaces/small
 
 resources:
 - ircc-cicd.yaml
 
+<<<<<<< HEAD
 patches:
 - patch-limits.yaml
+=======
+>>>>>>> b64f1db4a71a2a87405a2e858aaadcb2aceaacd8

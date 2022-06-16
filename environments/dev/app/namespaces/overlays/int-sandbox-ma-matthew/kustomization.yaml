@@ -1,0 +1,11 @@
+kind: Kustomization
+apiVersion: kustomize.config.k8s.io/v1beta1
+
+namespace: int-sandbox-ma-matthew
+
+bases:
+- ../../../../../../components/app/namespaces/small
+
+resources:
+- int-sandbox-ma-matthew.yaml
+

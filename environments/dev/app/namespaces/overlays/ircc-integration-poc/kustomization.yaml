@@ -1,0 +1,11 @@
+kind: Kustomization
+apiVersion: kustomize.config.k8s.io/v1beta1
+
+namespace: ircc-integration-poc
+
+bases:
+- ../../../../../../components/app/namespaces/small
+
+resources:
+- ircc-integration-poc.yaml
+

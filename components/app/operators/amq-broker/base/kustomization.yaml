@@ -2,10 +2,9 @@ kind: Kustomization
 apiVersion: kustomize.config.k8s.io/v1beta1
 
 commonAnnotations:
-  argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+  argocd.argoproj.io/sync-options: SkipDryRunPOnMissingResource=true
 
 resources:
 - namespace-ircc-openshift-amq-broker.yaml
-- amq-broker-operatorgroup.yaml
-- amq-broker-subscription.yaml
+- github.com/davidgaulin/tmp-gitops-catalog/amq-broker-operator/overlays/amq-broker-7.x?tag=amq-broker-7.x
 - amq-broker-instance.yaml

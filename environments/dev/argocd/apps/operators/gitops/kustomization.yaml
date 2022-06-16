@@ -1,0 +1,8 @@
+kind: Kustomization
+apiVersion: kustomize.config.k8s.io/v1beta1
+
+bases:
+- ../../../../../../components/argocd/apps/operators/gitops/base
+
+patchesStrategicMerge:
+- gitops.yaml

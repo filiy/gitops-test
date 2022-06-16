@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: phil-project1
+spec:
+  destinations:
+  - namespace: phil-project1-*
+    server: '*'
+  sourceRepos:
+  - https://github.com/filiy/*  
+  roles:
+  - name: phil-project1-admin
+    groups:
+    - phil-project1
+    policies:
+    - p, proj:phil-project1:phil-project1-admin, applications, *, phil-project1/*, allow

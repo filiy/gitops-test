@@ -1,0 +1,8 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: sandbox-gaulin-david
+  labels:
+    ircc.gc.ca/environment: dev
+    ircc.gc.ca/team: ircc-integration
+spec: {}
