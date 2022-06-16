@@ -1,0 +1,27 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: namespaces
+  namespace: openshift-gitops
+  annotations:
+    argocd.argoproj.io/sync-wave: "10"
+  labels:
+    gitops.ownedBy: cluster-config  
+spec:
+  destination:
+    namespace: openshift-gitops
+    server: 'https://kubernetes.default.svc'
+  project: ircc-openshift-amq-broker-address
+  source:
+    path: /address
+    repoURL: 'https://github.com/davidgaulin/tmp-ircc-openshift-amq-broker-address.git'
+    targetRevision: HEAD
+  syncPolicy:
+    automated:
+      selfHeal: true
+    retry:
+      limit: 5
+      backoff:
+        duration: 5s
+        factor: 2 
+        maxDuration: 3m 
