@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: ircc-openshift-amq-broker-address
+  name: ircc-openshift-amq-broker-address-application
   namespace: openshift-gitops
   annotations:
     argocd.argoproj.io/sync-wave: "10"
