@@ -9,3 +9,5 @@ bases:
 resources:
 - ircc-cicd.yaml
 
+patches:
+- patch-limits.yaml
