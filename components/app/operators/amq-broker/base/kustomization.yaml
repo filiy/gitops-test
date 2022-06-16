@@ -6,6 +6,6 @@ commonAnnotations:
 
 resources:
 - namespace-ircc-openshift-amq-broker.yaml
-- github.com/davidgaulin/tmp-gitops-catalog/amq-broker-operator/overlays/amq-broker-7.x?tag=amq-broker-7.x
+- github.com/davidgaulin/tmp-gitops-catalog/amq-broker-operator/overlays/amq-broker-7.x
 - amq-broker-operatorgroup.yaml
 - amq-broker-instance.yaml
