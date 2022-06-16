@@ -4,7 +4,7 @@ metadata:
   name: ircc-openshift-amq-broker-address
 spec:
   destinations:
-  - namespace: ircc-openshift-amq-broker-address
+  - namespace: ircc-openshift-amq-broker
     server: '*'
   sourceRepos:
   - https://github.com/davidgaulin/tmp-ircc-openshift-amq-broker-address/
