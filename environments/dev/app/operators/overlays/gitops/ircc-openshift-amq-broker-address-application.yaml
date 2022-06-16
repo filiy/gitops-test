@@ -9,11 +9,11 @@ metadata:
     gitops.ownedBy: cluster-config  
 spec:
   destination:
-    namespace: openshift-gitops
+    namespace: ircc-openshift-amq-broker
     server: 'https://kubernetes.default.svc'
   project: ircc-openshift-amq-broker-address
   source:
-    path: /address
+    path: address
     repoURL: 'https://github.com/davidgaulin/tmp-ircc-openshift-amq-broker-address.git'
     targetRevision: HEAD
   syncPolicy:
