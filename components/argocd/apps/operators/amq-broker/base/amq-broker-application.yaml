@@ -5,6 +5,9 @@ metadata:
   namespace: openshift-gitops
   labels:
     gitops.ownedBy: cluster-config  
+  annotations:
+    argocd.argoproj.io/sync-wave: "20"
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true    
 spec:
   destination:
     namespace: openshift-gitops
