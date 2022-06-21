@@ -3,8 +3,6 @@ kind: Application
 metadata:
   name: amq-broker-operator
   namespace: openshift-gitops
-  annotations:
-    argocd.argoproj.io/sync-wave: "20"
   labels:
     gitops.ownedBy: cluster-config  
 spec:
