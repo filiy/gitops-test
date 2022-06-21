@@ -1,6 +1,8 @@
 kind: Namespace
 apiVersion: v1
 metadata:
+  annotations:
+    argocd.argoproj.io/sync-wave: "5"
   name: ircc-openshift-amq-broker
   labels:
     ircc.gc.ca/environment: dev
