@@ -2,7 +2,7 @@ kind: Route
 apiVersion: route.openshift.io/v1
 metadata:
   name: amq-broker-console
-  namespace: ircc-openshift-amq-broker
+  namespace: ircc-integration-amq-broker
 spec:
   host: dev.broker-ui.apps.cluster1.hip-pih-development.aws.ci.gc.ca
   to:

@@ -1,16 +1,16 @@
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
-  name: ircc-openshift-amq-broker-address
+  name: ircc-integration-amq-broker-address
 spec:
   destinations:
-  - namespace: ircc-openshift-amq-broker
+  - namespace: ircc-integration-amq-broker
     server: '*'
   sourceRepos:
-  - https://github.com/davidgaulin/tmp-ircc-openshift-amq-broker-address/
+  - https://github.com/davidgaulin/tmp-ircc-integration-amq-broker-address/
   roles:
-  - name: ircc-openshift-amq-broker-address-admin
+  - name: ircc-integration-amq-broker-address-admin
     groups:
-    - ircc-openshift-amq-broker-address
+    - ircc-integration-amq-broker-address
     policies:
-    - p, proj:ircc-openshift-amq-broker-address:ircc-openshift-amq-broker-address-admin, applications, *, ircc-openshift-amq-broker-address/*, allow
+    - p, proj:ircc-integration-amq-broker-address:ircc-integration-amq-broker-address-admin, applications, *, ircc-integration-amq-broker-address/*, allow

@@ -4,7 +4,7 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "20"
   name: ircc-amq-broker
-  namespace: ircc-openshift-amq-broker
+  namespace: ircc-integration-amq-broker
 spec:
   adminPassword: admin
   adminUser: admin

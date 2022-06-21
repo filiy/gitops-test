@@ -8,6 +8,6 @@ resources:
 - appproject-phil-project1.yaml
 - appproject-phil-project2.yaml
 - int-pr-fc-cumulus.yaml
-- ircc-openshift-amq-broker-address.yaml
+- ircc-integration-amq-broker-address.yaml
 
-- ircc-openshift-amq-broker-address-application.yaml
+- ircc-integration-amq-broker-address-application.yaml
