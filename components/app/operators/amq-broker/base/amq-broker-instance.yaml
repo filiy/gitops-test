@@ -2,7 +2,7 @@ apiVersion: broker.amq.io/v2alpha5
 kind: ActiveMQArtemis
 metadata:
   annotations:
-    argocd.argoproj.io/sync-wave: "25"
+    argocd.argoproj.io/sync-wave: "20"
   name: ircc-amq-broker
   namespace: ircc-openshift-amq-broker
 spec:
