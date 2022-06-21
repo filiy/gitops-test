@@ -1,8 +1,6 @@
 apiVersion: operators.coreos.com/v1
 kind: OperatorGroup
 metadata:
-  annotations:
-    argocd.argoproj.io/sync-wave: "15"
   name: ircc-openshift-amq-broker
   namespace: ircc-openshift-amq-broker
 spec:
