@@ -1,0 +1,8 @@
+kind: Kustomization
+apiVersion: kustomize.config.k8s.io/v1beta1
+
+commonAnnotations:
+  argocd.argoproj.io/sync-options: SkipDryRunPOnMissingResource=true
+
+resources:
+- github.com/davidgaulin/tmp-gitops-catalog/openshift-pipelines-operator/overlays/1.7?ref=HEAD

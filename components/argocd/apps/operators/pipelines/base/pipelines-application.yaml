@@ -9,12 +9,12 @@ metadata:
     gitops.ownedBy: cluster-config  
 spec:
   destination:
-    namespace: openshift-gitops
+    namespace: openshift-gitopsgit s
     server: 'https://kubernetes.default.svc'
   project: default
   source:
-    path: openshift-pipelines-operator/overlays/1.7/
-    repoURL: 'https://github.com/davidgaulin/tmp-gitops-catalog.git'
+    path: components/app/operators/pipeline/base
+    repoURL: 'https://github.com/filiy/gitops-test.git'  
     targetRevision: HEAD
   syncPolicy:
     automated:
