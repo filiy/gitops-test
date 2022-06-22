@@ -3,7 +3,7 @@ kind: ActiveMQArtemis
 metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "20"
-    argocd.argoproj.io/sync-options: SkipDryRunPOnMissingResource=true    
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true    
   name: ircc-amq-broker
   namespace: ircc-integration-amq-broker
 spec:
