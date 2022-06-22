@@ -9,3 +9,12 @@ resources:
 - amq-broker-operatorgroup.yaml
 - github.com/davidgaulin/tmp-gitops-catalog/amq-broker-operator/overlays/amq-broker-7.x?tag=amq-broker-7.x-r1
 - amq-broker-instance.yaml
+
+patches:
+- target:
+    kind: Subscription
+    name: amq-broker-rhel8
+  patch: |-
+    - op: replace
+      path: /metadata/namespace
+      value: 'ircc-integration-amq-broker'
