@@ -1,0 +1,7 @@
+kind: OperatorGroup
+metadata:
+  name: ircc-integration-testing-yaks-opgroup
+  namespace: ircc-integration-testing
+spec:
+  targetNamespaces:
+    - ircc-integration-testing
