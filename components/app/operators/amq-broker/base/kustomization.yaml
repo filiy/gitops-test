@@ -7,7 +7,7 @@ commonAnnotations:
 resources:
 - namespace-ircc-integration-amq-broker.yaml
 - amq-broker-operatorgroup.yaml
-- github.com/davidgaulin/tmp-gitops-catalog/amq-broker-operator/overlays/amq-broker-7.x?tag=amq-broker-7.x-r1
+- github.com/davidgaulin/tmp-gitops-catalog/amq-broker-operator/overlays/amq-broker-7.x?ref=HEAD
 - amq-broker-instance.yaml
 
 patches:
