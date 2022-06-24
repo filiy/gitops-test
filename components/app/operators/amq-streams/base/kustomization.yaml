@@ -8,7 +8,6 @@ resources:
 - namespace-ircc-integration-amq-streams.yaml
 - amq-streams-operatorgroup.yaml
 - github.com/davidgaulin/tmp-gitops-catalog/amq-streams-operator/overlays/amq-streams-2.1.x?ref=HEAD
-- amq-broker-instance.yaml
 
 patches:
 - target:
