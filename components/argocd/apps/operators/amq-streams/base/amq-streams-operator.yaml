@@ -1,21 +1,22 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: amq-stream-operator
+  name: amq-streams-operator
   namespace: openshift-gitops
-  annotations:
-    argocd.argoproj.io/sync-wave: "20"
   labels:
     gitops.ownedBy: cluster-config  
+  annotations:
+    argocd.argoproj.io/sync-wave: "20"
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true    
 spec:
   destination:
     namespace: openshift-gitops
     server: 'https://kubernetes.default.svc'
   project: default
   source:
-    path: /amq-streams-operator/operator/overlays/amq-streams-2.1.x
-    repoURL: 'https://github.com/davidgaulin/tmp-gitops-catalog.git'
-    targetRevision: amq-broker-7.x
+    path: components/app/operators/amq-streams/base
+    repoURL: 'https://github.com/filiy/gitops-test.git'
+    targetRevision: HEAD
   syncPolicy:
     automated:
       selfHeal: true

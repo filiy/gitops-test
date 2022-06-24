@@ -1,0 +1,20 @@
+kind: Kustomization
+apiVersion: kustomize.config.k8s.io/v1beta1
+
+commonAnnotations:
+  argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+
+resources:
+- namespace-ircc-integration-amq-streams.yaml
+- amq-streams-operatorgroup.yaml
+- github.com/davidgaulin/tmp-gitops-catalog/amq-streams-operator/overlays/amq-streams-2.1.x?ref=HEAD
+- amq-broker-instance.yaml
+
+patches:
+- target:
+    kind: Subscription
+    name: amq-streams
+  patch: |-
+    - op: replace
+      path: /metadata/namespace
+      value: 'ircc-integration-amq-broker'
