@@ -15,4 +15,7 @@ resources:
 # Yaks. Integration Testing tool - DEV Only
 - ../../../../../components/argocd/apps/operators/yaks/base
 
+# Tenants Apps
+- ../../../../../environments/dev/tenants/
+
 
