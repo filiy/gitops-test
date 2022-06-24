@@ -3,7 +3,7 @@ kind: Kafka
 metadata:
   annotations:
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
-  name: ircc-integration-kafka-cluster
+  name: kafka-cluster
   namespace: ircc-integration-amq-streams
 spec:
   entityOperator:
