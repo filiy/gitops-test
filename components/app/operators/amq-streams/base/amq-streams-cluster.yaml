@@ -38,22 +38,6 @@ spec:
       initialDelaySeconds: 20
       timeoutSeconds: 5
     version: 3.1.0
-    template:
-      pod:
-        affinity:
-          nodeAffinity:
-            requiredDuringSchedulingIgnoredDuringExecution:
-              nodeSelectorTerms:
-                - matchExpressions:
-                    - key: security.zone
-                      operator: In
-                      values:
-                        - ops
-        tolerations:
-          - effect: NoSchedule
-            key: security.zone
-            operator: Equal
-            value: ops
     storage:
       size: 100Gi
       type: persistent-claim
@@ -112,19 +96,3 @@ spec:
     storage:
       size: 100Gi
       type: persistent-claim
-    template:
-      pod:
-        affinity:
-          nodeAffinity:
-            requiredDuringSchedulingIgnoredDuringExecution:
-              nodeSelectorTerms:
-                - matchExpressions:
-                    - key: security.zone
-                      operator: In
-                      values:
-                        - ops
-        tolerations:
-          - effect: NoSchedule
-            key: security.zone
-            operator: Equal
-            value: ops
