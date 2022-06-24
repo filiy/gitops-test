@@ -1,0 +1,10 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: argocd
+  namespace: openshift-gitops
+spec:
+  destination:
+    namespace: tenant-integration-gitops
+  source:
+    path: environment/dev/app/tenants/overlays/gitops

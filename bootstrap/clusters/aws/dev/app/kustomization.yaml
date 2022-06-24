@@ -16,6 +16,6 @@ resources:
 - ../../../../../components/argocd/apps/operators/yaks/base
 
 # Tenants Apps
-- ../../../../../environments/dev/tenants/
+- ../../../../../environments/dev/argocd/apps/tenants/integration/gitops
 
 
