@@ -7,7 +7,7 @@ commonAnnotations:
 resources:
 - namespace-ircc-integration-amq-streams.yaml
 - amq-streams-operatorgroup.yaml
-- github.com/davidgaulin/tmp-gitops-catalog/amq-streams-operator/CD overlays/amq-streams-2.1.x?ref=HEAD
+- github.com/davidgaulin/tmp-gitops-catalog/amq-streams-operator/overlays/amq-streams-2.1.x?ref=HEAD
 - amq-streams-cluster.yaml
 
 patches:
