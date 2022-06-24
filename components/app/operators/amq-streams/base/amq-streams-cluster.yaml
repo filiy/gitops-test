@@ -1,9 +1,8 @@
 apiVersion: kafka.strimzi.io/v1beta2
 kind: Kafka
 metadata:
-
-TODO - SKY - DRY RUN
-
+  annotations:
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
   name: ircc-kafka-cluster
   namespace: ircc-integration-amq-streams
 spec:
