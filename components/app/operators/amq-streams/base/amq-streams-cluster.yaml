@@ -3,7 +3,7 @@ kind: Kafka
 metadata:
   annotations:
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
-  name: ircc-kafka-cluster
+  name: ircc-integration-kafka-cluster
   namespace: ircc-integration-amq-streams
 spec:
   entityOperator:
@@ -55,16 +55,6 @@ spec:
         type: internal
       - authentication:
           type: tls
-        configuration:
-          bootstrap:
-            host: kafka-bootstrap.apps.opc-hip-apps.aws.ci.gc.ca
-          brokers:
-            - broker: 0
-              host: broker-0.apps.opc-hip-apps.aws.ci.gc.ca
-            - broker: 1
-              host: broker-1.apps.opc-hip-apps.aws.ci.gc.ca
-            - broker: 2
-              host: broker-2.apps.opc-hip-apps.aws.ci.gc.ca
         name: external
         port: 9094
         tls: true
