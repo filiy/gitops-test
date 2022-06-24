@@ -1,0 +1,25 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ArgoCD
+metadata:
+  name: tenant-integration-gitops
+  namespace: tenant-integration-gitops
+spec:
+  server:
+    insecure: true
+    route:
+      enabled: true
+      tls:
+        termination: edge
+        insecureEdgeTerminationPolicy: Redirect
+  dex:
+    openShiftOAuth: true
+  resourceCustomizations: |
+    route.openshift.io/Route:
+      ignoreDifferences: |
+        jsonPointers:
+        - /status/ingress
+  rbac:
+    defaultPolicy: role:readonly
+    policy: |
+      g, openshift-gitops-admins, role:admin
+    scopes: "[groups]"
