@@ -17,4 +17,4 @@ patches:
   patch: |-
     - op: replace
       path: /metadata/namespace
-      value: 'ircc-integration-amq-broker'git p
+      value: 'ircc-integration-amq-broker'
