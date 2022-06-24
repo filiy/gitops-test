@@ -5,6 +5,7 @@ bases:
   - ../../../../../components/argocd/apps/operators/gitops/base/
 
 resources:
+  - app-project.yaml
   #  - namespace.yaml
   #  - argo-instance.yaml
 # TODO - File contains values that I am not sure how to patch yet
