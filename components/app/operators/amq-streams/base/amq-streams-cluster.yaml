@@ -25,7 +25,7 @@ spec:
       valueFrom:
         configMapKeyRef:
           key: kafka-metrics-config.yml
-          name: kafka-metrics
+          name: amq-streams-cluster-metrics
     resources:
       limits:
         cpu: '2'
@@ -76,7 +76,7 @@ spec:
       valueFrom:
         configMapKeyRef:
           key: zookeeper-metrics-config.yml
-          name: kafka-metrics
+          name: amq-streams-cluster-metrics
     replicas: 3
     resources:
       limits:
