@@ -42,7 +42,7 @@ spec:
     version: 3.1.0
     storage:
       # TODO - Lowered from 100gi to 2gi for fake cluster
-      size: 100Gi
+      size: 2Gi
       type: persistent-claim
     replicas: 3
     listeners:
@@ -87,5 +87,6 @@ spec:
         cpu: '2'
         memory: 4Gi
     storage:
-      size: 100Gi
+      # TODO - Lowered from 100gi to 2gi for fake cluster
+      size: 2Gi
       type: persistent-claim
