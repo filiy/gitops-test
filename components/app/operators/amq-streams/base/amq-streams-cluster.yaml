@@ -1,6 +1,9 @@
 apiVersion: kafka.strimzi.io/v1beta2
 kind: Kafka
 metadata:
+
+TODO - SKY - DRY RUN
+
   name: ircc-kafka-cluster
   namespace: ircc-integration-amq-streams
 spec:
