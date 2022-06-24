@@ -1,7 +1,16 @@
-kind: Kustomization
 apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: integration-gitops
 
 resources:
-- github.com/davidgaulin/tmp-integration-gitops/ircc-integatrion-amq-streams/environment/dev?ref=HEAD
-- github.com/davidgaulin/tmp-integration-gitops/ircc-integatrion-amq-broker/environment/dev?ref=HEAD
-- github.com/davidgaulin/tmp-integration-gitops/ircc-integatrion-testing/environment/dev?ref=HEAD
+  - namespace.yaml
+  - argocd-instance.yaml
+  - integration-gitops-consolelink.yaml
+  - integration-gitops-argocd-extended-clusterrole.yaml
+  - integration-gitops-argocd-extended-clusterrolebinding.yaml
+
+# resources:
+# - github.com/davidgaulin/tmp-integration-gitops/ircc-integatrion-amq-streams/environment/dev?ref=HEAD
+# - github.com/davidgaulin/tmp-integration-gitops/ircc-integatrion-amq-broker/environment/dev?ref=HEAD
+# - github.com/davidgaulin/tmp-integration-gitops/ircc-integatrion-testing/environment/dev?ref=HEAD
