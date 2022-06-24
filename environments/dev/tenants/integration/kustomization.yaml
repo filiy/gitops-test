@@ -6,7 +6,8 @@ namespace: integration-gitops
 resources:
   - namespace.yaml
   - argocd-instance.yaml
-  - integration-gitops-consolelink.yaml
+# TODO - File contains values that I am not sure how to patch yet
+# - integration-gitops-consolelink.yaml
   - integration-gitops-argocd-extended-clusterrole.yaml
   - integration-gitops-argocd-extended-clusterrolebinding.yaml
 
