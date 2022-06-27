@@ -5,7 +5,7 @@ metadata:
     argocd.argoproj.io/sync-wave: "42"
   labels:
     gitops.ownedBy: openshift-gitops
-  name: ircc-integration-amq-broker-namespace
+  name: ircc-integration-amq-broker-application
 spec:
   destination:
     namespace: openshift-gitops
