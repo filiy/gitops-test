@@ -10,7 +10,7 @@ spec:
   destination:
     namespace: openshift-gitops
     server: https://kubernetes.default.svc
-  project: tenant-integration
+  project: tenant-integration-app-project
   source:
     path: ircc-integration-amq-streams/environment/dev
     repoURL: https://github.com/davidgaulin/tmp-integration-gitops.git
