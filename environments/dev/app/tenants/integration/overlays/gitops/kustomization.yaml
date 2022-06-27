@@ -10,6 +10,8 @@ resources:
 - app-project.yaml
 - namespace.yaml
 - ircc-integration-amq-streams.yaml
+- ircc-integration-amq-broker.yaml
+- int-pr-fc-cumulus.yaml
 
 patches:
 - target:
