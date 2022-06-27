@@ -7,4 +7,4 @@ spec:
   destination:
     namespace: tenant-integration-gitops
   source:
-    path: environments/dev/app/tenants/overlays/gitops
+    path: environments/dev/app/tenants/integration/overlays/gitops
