@@ -6,12 +6,13 @@ bases:
 
 resources:
   - app-project.yaml
-  #  - namespace.yaml
+  - namespace.yaml
+  - integration-gitops-argocd-extended-clusterrole.yaml
+  - integration-gitops-argocd-extended-clusterrolebinding.yaml  
   #  - argo-instance.yaml
 # TODO - File contains values that I am not sure how to patch yet
 # - integration-gitops-consolelink.yaml
-#  - integration-gitops-argocd-extended-clusterrole.yaml
-#  - integration-gitops-argocd-extended-clusterrolebinding.yaml
+
 
 # resources:
 # - github.com/davidgaulin/tmp-integration-gitops/ircc-integatrion-amq-streams/environment/dev?ref=HEAD
