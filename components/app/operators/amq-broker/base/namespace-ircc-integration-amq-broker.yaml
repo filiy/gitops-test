@@ -5,6 +5,8 @@ metadata:
   labels:
     ircc.gc.ca/environment: dev
     ircc.gc.ca/team: ircc-integration
+    # TODO Move to environment layer
+    argocd.argoproj.io/managed-by: tenant-integration-gitops     
 spec: {}
 ---
 apiVersion: networking.k8s.io/v1
