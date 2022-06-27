@@ -11,7 +11,7 @@ resources:
 - namespace.yaml
 - ircc-integration-amq-streams.yaml
 - ircc-integration-amq-broker.yaml
-- int-pr-fc-cumulus.yaml
+- int-pr-fc-cumulus/
 
 patches:
 - target:
