@@ -5,7 +5,8 @@ bases:
   - ../../../../../components/argocd/apps/operators/gitops/base/
 
 resources:
-  - app-project.yaml 
+  - app-project.yaml
+  - ircc-integration-amq-streams.yaml
 
 
 ## PRobably INVALID
