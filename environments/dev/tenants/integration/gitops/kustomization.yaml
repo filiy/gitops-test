@@ -8,6 +8,8 @@ resources:
   - app-project.yaml
   - ircc-integration-amq-streams.yaml
 
+patch:
+  - argo-rbac.yaml
 
 ## PRobably INVALID
 #  - argo-instance.yaml
