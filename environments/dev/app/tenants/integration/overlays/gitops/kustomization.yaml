@@ -5,6 +5,8 @@ bases:
 - ../../../../../../../components/app/operators/gitops/base
 
 resources:
+- cluster-role.yaml
+- cluster-role-binding.yaml
 - app-project.yaml
 - namespace.yaml
 - ircc-integration-amq-streams.yaml

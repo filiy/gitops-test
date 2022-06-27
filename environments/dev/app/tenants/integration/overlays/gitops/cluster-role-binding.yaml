@@ -10,5 +10,5 @@ roleRef:
   name: tenant-integration-gitops-argocd-extended-clusterrole
 subjects:
   - kind: ServiceAccount
-    name: argocd-argocd-application-controller
+    name: openshift-gitops-argocd-server
     namespace: tenant-integration-gitops
