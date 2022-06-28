@@ -5,4 +5,4 @@ resources:
 - 00-gitops
 - 01-namespaces
 - 02-operators
-- 03-argocd
+- 03-argocd/apps
