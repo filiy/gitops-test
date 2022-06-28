@@ -15,7 +15,7 @@ spec:
   source:
     path: tenants/integration/
     repoURL: https://github.com/filiy/gitops-test.git
-    targetRevision: HEAD
+    targetRevision: moving-tenant-info
   syncPolicy:
     automated:
       selfHeal: true
