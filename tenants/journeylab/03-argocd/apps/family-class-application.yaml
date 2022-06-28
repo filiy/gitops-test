@@ -12,7 +12,7 @@ spec:
     server: https://kubernetes.default.svc
   project: tenant-journeylab-app-project
   source:
-    path: journeylab-family-class/environment/dev
+    path: family-class/environment/dev
     repoURL: https://github.com/davidgaulin/tmp-journeylab-gitops.git
     targetRevision: main
   syncPolicy:
