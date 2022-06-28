@@ -1,0 +1,10 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: journeylab-family-class
+  labels:
+    ircc.gc.ca/environment: dev
+    ircc.gc.ca/team: journeylab
+    # TODO Move to environment layer
+    argocd.argoproj.io/managed-by: tenant-journeylab-gitops 
+spec: {}

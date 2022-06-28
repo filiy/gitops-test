@@ -13,7 +13,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: tenants/integration/
+    path: tenants/integration/01-dev/
     repoURL: https://github.com/filiy/gitops-test.git
     targetRevision: moving-tenant-info
   syncPolicy:

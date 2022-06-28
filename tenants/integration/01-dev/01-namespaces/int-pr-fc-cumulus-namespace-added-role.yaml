@@ -1,14 +1,3 @@
-kind: Namespace
-apiVersion: v1
-metadata:
-  name: int-pr-fc-cumulus
-  labels:
-    ircc.gc.ca/environment: dev
-    ircc.gc.ca/team: ircc-integration
-    # TODO Move to environment layer
-    argocd.argoproj.io/managed-by: tenant-integration-gitops 
-spec: {}
----
 apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
