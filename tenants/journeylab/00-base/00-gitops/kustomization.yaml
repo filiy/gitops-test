@@ -1,0 +1,24 @@
+kind: Kustomization
+apiVersion: kustomize.config.k8s.io/v1beta1
+
+bases:
+- ../../../../components/app/operators/gitops/base
+
+resources:
+- cluster-role.yaml
+- cluster-role-binding.yaml
+- app-project.yaml
+- namespace.yaml
+
+patches:
+- target:
+    kind: ArgoCD
+    name: openshift-gitops
+  patch: |-
+    - op: replace
+      path: /metadata/namespace
+      value: 'tenant-journeylab-gitops'
+    - op: replace
+      path: /spec/rbac/policy
+      value: 'g, openshift-gitops-admins, role:admin'      
+

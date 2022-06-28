@@ -1,0 +1,29 @@
+kind: Kustomization
+apiVersion: kustomize.config.k8s.io/v1beta1
+
+bases:
+- ../00-base/
+
+# Pointing the app to the proper repo folder
+patches:
+- target:
+    kind: Application
+    name: int-pr-fc-cumulus-application
+  patch: |-
+    - op: replace
+      path: /spec/source/path
+      value: int-pr-fc-cumulus/environment/ste
+- target:
+    kind: Application
+    name: ircc-integration-amq-broker-application
+  patch: |-
+    - op: replace
+      path: /spec/source/path
+      value: ircc-integration-amq-broker/environment/ste
+- target:
+    kind: Application
+    name: ircc-integration-amq-streams-application
+  patch: |-
+    - op: replace
+      path: /spec/source/path
+      value: ircc-integration-amq-streams/environment/ste

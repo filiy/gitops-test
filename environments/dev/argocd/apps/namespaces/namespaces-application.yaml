@@ -6,3 +6,4 @@ metadata:
 spec:
   source:
     path: environments/dev/app/namespaces/overlays
+    targetRevision: HEAD

@@ -1,0 +1,14 @@
+kind: ClusterRoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  annotations:
+    argocd.argoproj.io/sync-options: Prune=false
+  name: tenant-journeylab-gitops-argocd-extended-clusterrolebinding
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: tenant-journeylab-gitops-argocd-extended-clusterrole
+subjects:
+  - kind: ServiceAccount
+    name: openshift-gitops-argocd-server
+    namespace: tenant-journeylab-gitops

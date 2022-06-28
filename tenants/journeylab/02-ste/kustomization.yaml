@@ -1,0 +1,14 @@
+kind: Kustomization
+apiVersion: kustomize.config.k8s.io/v1beta1
+
+bases:
+- ../00-base/
+
+patches:
+- target:
+    kind: Application
+    name: journeylab-family-class-application
+  patch: |-
+    - op: replace
+      path: /spec/source/path
+      value: journeylab-family-class/environment/ste

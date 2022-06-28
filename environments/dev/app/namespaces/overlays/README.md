@@ -1,0 +1,1 @@
+Most of those namespaces should be moved to a tenant repo.
