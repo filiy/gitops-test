@@ -5,15 +5,15 @@ metadata:
     argocd.argoproj.io/sync-wave: "20"
   labels:
     gitops.ownedBy: cluster-config
-  name: tenant-integration-gitops
+  name: tenant-journeylab-gitops
   namespace: openshift-gitops
 spec:
   destination:
-    namespace: tenant-integration-gitops
+    namespace: tenant-journeylab-gitops
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: tenants/integration/
+    path: tenants/journeylab/
     repoURL: https://github.com/filiy/gitops-test.git
     targetRevision: HEAD
   syncPolicy:
