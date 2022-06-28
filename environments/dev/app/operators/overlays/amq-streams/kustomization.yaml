@@ -1,25 +1,5 @@
 kind: Kustomization
 apiVersion: kustomize.config.k8s.io/v1beta1
 
-kind: Kustomization
-apiVersion: kustomize.config.k8s.io/v1beta1
-
 bases:
 - ../../../../../../components/app/operators/amq-streams/base
-
-# resources:
-# - role-binding-developers-group.yaml
-# - amq-broker-route.yaml
-
-
-# resources:
-# - github.com/redhat-cop/gitops-catalog.git/amq-streams-operator/operator/overlays/amq-streams-2.1.x
-
-# patches:
-# - target:
-#     kind: Subscription
-#     name: amq-streams
-#   patch: |-
-#     - op: replace
-#       path: /spec/channel
-#       value: 'amq-streams-2.1.x'
