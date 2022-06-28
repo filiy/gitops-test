@@ -5,6 +5,9 @@ metadata:
   namespace: openshift-gitops
 spec:
   destination:
+    server: https://kubernetes.default.svc
     namespace: tenant-integration-gitops
   source:
+    repoURL: https://github.com/filiy/gitops-test.git
     path: tenants/integration/gitops
+  project: tenant-integration-app-project    
