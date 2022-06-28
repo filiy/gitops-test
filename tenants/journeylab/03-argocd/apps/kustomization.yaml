@@ -2,6 +2,4 @@ kind: Kustomization
 apiVersion: kustomize.config.k8s.io/v1beta1
 
 resources:
-- int-pr-fc-cumulus-application.yaml
-- ircc-integration-amq-broker-application.yaml
-- ircc-integration-amq-streams-application.yaml
+- family-class-application.yaml
