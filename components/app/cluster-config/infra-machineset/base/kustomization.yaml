@@ -2,4 +2,6 @@ kind: Kustomization
 apiVersion: kustomize.config.k8s.io/v1beta1
 
 resources:
-- infra-machineset.yaml
+- infra-machineset-zone1.yaml
+- infra-machineset-zone2.yaml
+- infra-machineset-zone3.yaml
