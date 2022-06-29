@@ -12,7 +12,7 @@ patches:
   patch: |-
     - op: replace
       path: /spec/source/path
-      value: int-pr-fc-cumulus/environment/ste
+      value: ircc-integration-cumulus/environment/ste
 - target:
     kind: Application
     name: ircc-integration-amq-broker-application
