@@ -2,11 +2,9 @@ kind: Kustomization
 apiVersion: kustomize.config.k8s.io/v1beta1
 
 resources:
-- eso-sandbox-boudreault-martin
-- eso-sandbox-sullivan-michael
-- phil-project1
-- phil-project2
-- rh-sandbox-tang-patrick
-- rh-sandbox-thomson-phil
-- sandbox-gaulin-david
-- sandbox-huisman-glenn
+- ircc-eso-sandbox-boudreault-martin
+- ircc-eso-sandbox-sullivan-michael
+- ircc-hip-sandbox-tang-patrick
+- ircc-hip-sandbox-thomson-phil
+- ircc-hip-sandbox-gaulin-david
+- ircc-hip-sandbox-huisman-glenn

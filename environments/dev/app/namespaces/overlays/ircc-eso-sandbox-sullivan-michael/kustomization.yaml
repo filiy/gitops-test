@@ -1,11 +1,11 @@
 kind: Kustomization
 apiVersion: kustomize.config.k8s.io/v1beta1
 
-namespace: sandbox-gaulin-david
+namespace: ircc-eso-sandbox-sullivan-michael
 
 bases:
 - ../../../../../../components/app/namespaces/small
 
 resources:
-- sandbox-gaulin-david.yaml
+- ircc-eso-sandbox-sullivan-michael.yaml
 

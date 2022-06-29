@@ -1,11 +1,11 @@
 kind: Kustomization
 apiVersion: kustomize.config.k8s.io/v1beta1
 
-namespace: sandbox-huisman-glenn
+namespace: ircc-hip-sandbox-tang-patrick
 
 bases:
 - ../../../../../../components/app/namespaces/small
 
 resources:
-- sandbox-huisman-glenn.yaml
+- ircc-hip-sandbox-tang-patrick.yaml
 

@@ -1,11 +1,11 @@
 kind: Kustomization
 apiVersion: kustomize.config.k8s.io/v1beta1
 
-namespace: rh-sandbox-thomson-phil
+namespace: ircc-eso-sandbox-boudreault-martin
 
 bases:
 - ../../../../../../components/app/namespaces/small
 
 resources:
-- rh-sandbox-thomson-phil.yaml
+- ircc-eso-sandbox-boudreault-martin.yaml
 

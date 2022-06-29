@@ -1,8 +1,8 @@
 kind: Namespace
 apiVersion: v1
 metadata:
-  name: rh-sandbox-thomson-phil
+  name: ircc-hip-sandbox-thomson-phil
   labels:
     ircc.gc.ca/environment: dev
-    ircc.gc.ca/team: ircc-integration
+    ircc.gc.ca/team: ircc-hip
 spec: {}

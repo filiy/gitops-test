@@ -1,8 +1,8 @@
 kind: Namespace
 apiVersion: v1
 metadata:
-  name: rh-sandbox-tang-patrick
+  name: ircc-eso-sandbox-sullivan-michael
   labels:
     ircc.gc.ca/environment: dev
-    ircc.gc.ca/team: ircc-integration
+    ircc.gc.ca/team: ircc-eso
 spec: {}
