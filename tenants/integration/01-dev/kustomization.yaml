@@ -11,7 +11,7 @@ resources:
 patches:
 - target:
     kind: Application
-    name: ircc-integration-cumulus
+    name: ircc-integration-cumulus-application
   patch: |-
     - op: replace
       path: /spec/source/path
