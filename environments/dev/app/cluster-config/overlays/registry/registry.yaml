@@ -1,0 +1,7 @@
+  storage:
+    managementState: Managed
+    s3:
+      bucket: cluster-znxjs-9s78v-image-registry-ap-southeast-1-okbwesaibyca
+      encrypt: true
+      region: ap-southeast-1
+      virtualHostedStyle: false

@@ -3,7 +3,6 @@ kind: Config
 metadata:
   finalizers:
     - imageregistry.operator.openshift.io/finalizer
-
   name: cluster
 spec:
   affinity:
@@ -30,12 +29,11 @@ spec:
   managementState: Managed
   proxy: {}
   unsupportedConfigOverrides: null
-  httpSecret: 9c2b5cb0ee34f2a2eeabe3fbb584a38????
   storage:
     managementState: Managed
     s3:
-      bucket: cluster-znxjs-9s78v-image-registry-ap-southeast-1-okbwesaibyca
+      bucket: bucketname
       encrypt: true
-      region: ap-southeast-1
+      region: region-1
       virtualHostedStyle: false
   replicas: 3
