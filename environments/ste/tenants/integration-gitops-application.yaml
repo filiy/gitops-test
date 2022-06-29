@@ -1,0 +1,27 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  annotations:
+    argocd.argoproj.io/sync-wave: "20"
+  labels:
+    gitops.ownedBy: cluster-config
+  name: tenant-integration-gitops
+  namespace: openshift-gitops
+spec:
+  destination:
+    namespace: tenant-integration-gitops
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: tenants/integration/01-ste/
+    repoURL: https://github.com/filiy/gitops-test.git
+    targetRevision: HEAD
+  syncPolicy:
+    automated:
+      selfHeal: true
+    retry:
+      backoff:
+        duration: 5s
+        factor: 2
+        maxDuration: 3m
+      limit: 5

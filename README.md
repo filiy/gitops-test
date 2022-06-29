@@ -30,4 +30,4 @@ To avoid conflict and collision between tenants, each tenants will receive its o
 
 
 ## Tagging and reference
-When working in a dev environment, try to point everything to the Main branch as much as possible on HEAD.  When promoting to higher environment, use meaningful tag to point to specific point in time in the repository. The tagging is on top of any possible environment overlays which will be applied to the base, which may vary in the main branch.
+When working in a dev environment, try to point everything to the Main branch as much as possible on HEAD.  When promoting to higher environment, create and use meaningful tag to point to a specific point in time in the repository. Tagging is important even if we have environment overlays. Environment overlays are applied on top of the base, which may vary in the main/HEAD branch.

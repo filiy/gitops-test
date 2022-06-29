@@ -1,0 +1,11 @@
+kind: Kustomization
+apiVersion: kustomize.config.k8s.io/v1beta1
+
+namespace: ircc-integration-sandbox-richard-philip
+
+bases:
+- ../../../../../components/app/namespaces/small
+
+resources:
+- ircc-integration-sandbox-richard-philip.yaml
+

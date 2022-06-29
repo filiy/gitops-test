@@ -2,20 +2,24 @@ kind: Kustomization
 apiVersion: kustomize.config.k8s.io/v1beta1
 
 resources:
-- int-pr-fc-cumulus-namespace-added-role.yaml
-- int-sandbox-constant-carmai/
-- int-sandbox-daniel-taylor/
-- int-sandbox-elgin-jessica/
-- int-sandbox-jovovic-stefan/
-- int-sandbox-kanumuri-subbarao/
-- int-sandbox-kirnishni-vladimir/
-- int-sandbox-langevin-yves/
-- int-sandbox-ma-matthew/
-- int-sandbox-mantha-gerry/
-- int-sandbox-navid-mahesaniya/
-- int-sandbox-prevost-michel/
-- int-sandbox-richard-philip/
-- int-sandbox-slim-rayan/
-- ircc-integration/
+- ircc-integration-cumulus-namespace-added-role.yaml
+- ircc-integration-sandbox-constant-carmai/
+- ircc-integration-sandbox-daniel-taylor/
+- ircc-integration-sandbox-elgin-jessica/
+- ircc-integration-sandbox-jovovic-stefan/
+- ircc-integration-sandbox-kanumuri-subbarao/
+- ircc-integration-sandbox-kirnishni-vladimir/
+- ircc-integration-sandbox-langevin-yves/
+- ircc-integration-sandbox-ma-matthew/
+- ircc-integration-sandbox-mantha-gerry/
+- ircc-integration-sandbox-navid-mahesaniya/
+- ircc-integration-sandbox-prevost-michel/
+- ircc-integration-sandbox-richard-philip/
+- ircc-integration-sandbox-slim-rayan/
+
 - ircc-integration-poc/
 - ircc-integration-testing/
+
+
+# TODO Confirm what this namespace is for and if it should be in base
+- ircc-integration/

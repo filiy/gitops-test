@@ -2,4 +2,5 @@ kind: Kustomization
 apiVersion: kustomize.config.k8s.io/v1beta1
 
 resources:
-- ircc-integration-cumulus/
+- integration-gitops-application.yaml
+- journeylab-gitops-application.yaml
