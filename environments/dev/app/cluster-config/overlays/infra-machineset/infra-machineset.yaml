@@ -32,7 +32,7 @@ spec:
                 volumeSize: 120
                 volumeType: gp2
           iamInstanceProfile:
-            id: znxjs-worker-profile 
+            id: cluster-znxjs-9s78v-worker-profile
           instanceType: m5a.4xlarge
           placement:
             availabilityZone: ap-southeast-1c
@@ -41,12 +41,22 @@ spec:
             - filters:
                 - name: tag:Name
                   values:
-                    - znxjs-worker-sg 
+                    - cluster-znxjs-9s78v-worker-sg
           subnet:
             filters:
               - name: tag:Name
                 values:
                   - cluster-znxjs-9s78v-private-ap-southeast-1c
           tags:
-            - name: kubernetes.io/cluster/znxjs 
+            - name: kubernetes.io/cluster/cluster-znxjs-9s78v
               value: owned
+            - name: Stack
+              value: project ocp4-cluster-znxjs
+            - name: env_type
+              value: ocp4-cluster
+            - name: guid
+              value: znxjs
+            - name: owner
+              value: unknown
+            - name: platform
+              value: RHPDS
