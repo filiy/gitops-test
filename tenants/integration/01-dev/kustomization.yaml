@@ -8,7 +8,7 @@ resources:
   - 01-namespaces
   - 03-argocd/apps
 
-# Patching the argocd application from base
+# Patching the argocd application from base to point to dev
 patches:
 - target:
     kind: Application
