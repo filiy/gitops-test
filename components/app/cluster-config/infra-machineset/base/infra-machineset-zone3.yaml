@@ -2,22 +2,22 @@ apiVersion: machine.openshift.io/v1beta1
 kind: MachineSet
 metadata:
   labels:
-    machine.openshift.io/cluster-api-cluster: znxjs 
-  name: znxjs-infra-ap-southeast-1c
+    machine.openshift.io/cluster-api-cluster: <infrastructure_id> 
+  name: infra-machineset-zone3
   namespace: openshift-machine-api
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
-      machine.openshift.io/cluster-api-cluster: znxjs 
-      machine.openshift.io/cluster-api-machineset: znxjs-infra-znxjs 
+      machine.openshift.io/cluster-api-cluster: <infrastructure_id> 
+      machine.openshift.io/cluster-api-machineset: <infrastructure_id>-infra-<zone> 
   template:
     metadata:
       labels:
-        machine.openshift.io/cluster-api-cluster: znxjs 
-        machine.openshift.io/cluster-api-machine-role: infra
-        machine.openshift.io/cluster-api-machine-type: infra
-        machine.openshift.io/cluster-api-machineset: znxjs-infra-znxjs 
+        machine.openshift.io/cluster-api-cluster: <infrastructure_id> 
+        machine.openshift.io/cluster-api-machine-role: <infra> 
+        machine.openshift.io/cluster-api-machine-type: <infra> 
+        machine.openshift.io/cluster-api-machineset: <infrastructure_id>-infra-<zone> 
     spec:
       metadata:
         labels:
@@ -28,7 +28,7 @@ spec:
       providerSpec:
         value:
           ami:
-            id: ami-0ed28e9e0cc4bc9f3
+            id: ami-046fe691f52a953f9 
           apiVersion: awsproviderconfig.openshift.io/v1beta1
           blockDevices:
             - ebs:
@@ -39,24 +39,24 @@ spec:
             name: aws-cloud-credentials
           deviceIndex: 0
           iamInstanceProfile:
-            id: znxjs-worker-profile 
-          instanceType: m5a.4xlarge
+            id: <infrastructure_id>-worker-profile 
+          instanceType: m6i.large
           kind: AWSMachineProviderConfig
           placement:
-            availabilityZone: ap-southeast-1c
-            region: ap-southeast-1
+            availabilityZone: us-east-1a
+            region: us-east-1
           securityGroups:
             - filters:
                 - name: tag:Name
                   values:
-                    - znxjs-worker-sg 
+                    - <infrastructure_id>-worker-sg 
           subnet:
             filters:
               - name: tag:Name
                 values:
-                  - znxjs-private-us-east-1a 
+                  - <infrastructure_id>-private-us-east-1a 
           tags:
-            - name: kubernetes.io/cluster/znxjs 
+            - name: kubernetes.io/cluster/<infrastructure_id> 
               value: owned
           userDataSecret:
             name: worker-user-data

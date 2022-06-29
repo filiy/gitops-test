@@ -3,7 +3,7 @@ kind: MachineSet
 metadata:
   labels:
     machine.openshift.io/cluster-api-cluster: <infrastructure_id> 
-  name: infra-1
+  name: infra-machineset-zone2
   namespace: openshift-machine-api
 spec:
   replicas: 3

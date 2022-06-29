@@ -5,4 +5,6 @@ bases:
 - ../../../../../../components/app/cluster-config/infra-machineset/base
 
 patchesStrategicMerge:
-- infra-machineset.yaml
+- infra-machineset-zone1.yaml
+- infra-machineset-zone2.yaml
+- infra-machineset-zone3.yaml
