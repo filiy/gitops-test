@@ -5,7 +5,7 @@ metadata:
     argocd.argoproj.io/sync-wave: "42"
   labels:
     gitops.ownedBy: openshift-gitops
-  name: int-pr-fc-cumulus-application
+  name: ircc-integration-cumulus-application
 spec:
   destination:
     namespace: openshift-gitops

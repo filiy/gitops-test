@@ -2,6 +2,11 @@ kind: Kustomization
 apiVersion: kustomize.config.k8s.io/v1beta1
 
 resources:
+- ircc-integration-poc/
+- ircc-integration-testing/
+- ircc-integration-pipeline/
+
+# Sandboxes
 - ircc-integration-cumulus-namespace-added-role.yaml
 - ircc-integration-sandbox-constant-carmai/
 - ircc-integration-sandbox-daniel-taylor/
@@ -16,10 +21,6 @@ resources:
 - ircc-integration-sandbox-prevost-michel/
 - ircc-integration-sandbox-richard-philip/
 - ircc-integration-sandbox-slim-rayan/
-
-- ircc-integration-poc/
-- ircc-integration-testing/
-
 
 # TODO Confirm what this namespace is for and if it should be in base
 - ircc-integration/
