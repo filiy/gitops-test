@@ -1,0 +1,8 @@
+kind: Kustomization
+apiVersion: kustomize.config.k8s.io/v1beta1
+
+bases:
+- ../../../../../../components/app/cluster-config/infra-machineset/base
+
+patchesStrategicMerge:
+- infra-machineset.yaml

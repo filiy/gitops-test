@@ -21,3 +21,5 @@ resources:
 - ../../../../../environments/dev/tenants/
 
 
+# Cluster Configs
+- ../../../../../environments/dev/argocd/apps/cluster-config/infra-machineset

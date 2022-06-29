@@ -1,0 +1,25 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: cluster-config-infra-machineset
+  namespace: openshift-gitops
+  labels:
+    gitops.ownedBy: cluster-config  
+spec:
+  destination:
+    namespace: openshift-gitops
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    path: components/app/cluster-config/infra-machineset/base
+    repoURL: 'https://github.com/filiy/gitops-test.git'
+    targetRevision: HEAD
+  syncPolicy:
+    automated:
+      selfHeal: true
+    retry:
+      limit: 5
+      backoff:
+        duration: 5s
+        factor: 2 
+        maxDuration: 3m   
