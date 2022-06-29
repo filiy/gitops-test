@@ -3,7 +3,7 @@ kind: MachineSet
 metadata:
   labels:
     machine.openshift.io/cluster-api-cluster: znxjs 
-  name: infra-1
+  name: infra-machineset-zone1
   namespace: openshift-machine-api
 spec:
   replicas: 1

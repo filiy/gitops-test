@@ -1,0 +1,62 @@
+apiVersion: machine.openshift.io/v1beta1
+kind: MachineSet
+metadata:
+  labels:
+    machine.openshift.io/cluster-api-cluster: znxjs 
+  name: infra-machineset-zone2
+  namespace: openshift-machine-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      machine.openshift.io/cluster-api-cluster: znxjs 
+      machine.openshift.io/cluster-api-machineset: znxjs-infra-znxjs 
+  template:
+    metadata:
+      labels:
+        machine.openshift.io/cluster-api-cluster: znxjs 
+        machine.openshift.io/cluster-api-machine-role: infra
+        machine.openshift.io/cluster-api-machine-type: infra
+        machine.openshift.io/cluster-api-machineset: znxjs-infra-znxjs 
+    spec:
+      providerSpec:
+        value:
+          ami:
+            id: ami-0ed28e9e0cc4bc9f3
+          blockDevices:
+            - ebs:
+                encrypted: true
+                iops: 0
+                kmsKey:
+                  arn: ''
+                volumeSize: 120
+                volumeType: gp2
+          iamInstanceProfile:
+            id: cluster-znxjs-9s78v-worker-profile
+          instanceType: m5a.4xlarge
+          placement:
+            availabilityZone: ap-southeast-1c
+            region: ap-southeast-1
+          securityGroups:
+            - filters:
+                - name: tag:Name
+                  values:
+                    - cluster-znxjs-9s78v-worker-sg
+          subnet:
+            filters:
+              - name: tag:Name
+                values:
+                  - cluster-znxjs-9s78v-private-ap-southeast-1c
+          tags:
+            - name: kubernetes.io/cluster/cluster-znxjs-9s78v
+              value: owned
+            - name: Stack
+              value: project ocp4-cluster-znxjs
+            - name: env_type
+              value: ocp4-cluster
+            - name: guid
+              value: znxjs
+            - name: owner
+              value: unknown
+            - name: platform
+              value: RHPDS
