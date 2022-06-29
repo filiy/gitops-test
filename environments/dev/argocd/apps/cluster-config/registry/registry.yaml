@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: cluster-config-infra-machineset
+  name: cluster-config-infra-registry
   namespace: openshift-gitops
 spec:
   source:
