@@ -11,11 +11,11 @@ resources:
 patches:
 - target:
     kind: Application
-    name: int-pr-fc-cumulus-application
+    name: ircc-integration-cumulus
   patch: |-
     - op: replace
       path: /spec/source/path
-      value: int-pr-fc-cumulus/environment/dev
+      value: ircc-integration-cumulus/environment/dev
 - target:
     kind: Application
     name: ircc-integration-amq-broker-application
