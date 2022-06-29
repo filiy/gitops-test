@@ -46,7 +46,7 @@ spec:
             filters:
               - name: tag:Name
                 values:
-                  - znxjs-private-us-east-1a 
+                  - cluster-znxjs-9s78v-private-ap-southeast-1c
           tags:
             - name: kubernetes.io/cluster/znxjs 
               value: owned
