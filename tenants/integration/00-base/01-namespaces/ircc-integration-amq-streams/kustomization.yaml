@@ -1,7 +1,8 @@
 kind: Kustomization
 apiVersion: kustomize.config.k8s.io/v1beta1
 
-namespace: ircc-integration-cumulus
+namespace: ircc-integration-amq-streams
+
 resources:
-- ircc-integration-cumulus.yaml
+- ircc-integration-amq-streams.yaml
 

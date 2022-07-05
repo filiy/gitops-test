@@ -1,0 +1,1 @@
+Install the RedHat AMQ Broker operator in all namespaces

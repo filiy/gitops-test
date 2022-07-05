@@ -5,16 +5,5 @@ commonAnnotations:
   argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 
 resources:
-- namespace-ircc-integration-amq-broker.yaml
 - amq-broker-operatorgroup.yaml
 - github.com/davidgaulin/tmp-gitops-catalog/amq-broker-operator/overlays/amq-broker-7.x?ref=HEAD
-- amq-broker-instance.yaml
-
-patches:
-- target:
-    kind: Subscription
-    name: amq-broker-rhel8
-  patch: |-
-    - op: replace
-      path: /metadata/namespace
-      value: 'ircc-integration-amq-broker'

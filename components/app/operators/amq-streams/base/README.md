@@ -1,0 +1,1 @@
+Install the RedHat AMQ Streams operator in all namespaces
