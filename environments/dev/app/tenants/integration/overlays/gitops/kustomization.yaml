@@ -19,7 +19,7 @@ patches:
   patch: |-
     - op: replace
       path: /metadata/namespace
-      value: 'tenant-integration-gitops'
+      value: 'ircc-tenant-integration-gitops'
     - op: replace
       path: /spec/rbac/policy
       value: 'g, openshift-gitops-admins, role:admin'      

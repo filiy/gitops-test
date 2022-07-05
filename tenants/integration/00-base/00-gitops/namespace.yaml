@@ -5,5 +5,5 @@ metadata:
     openshift.io/description: Integration Argo CD instance.
     openshift.io/display-name: Integration GitOps
   labels:
-    argocd.argoproj.io/managed-by: tenant-integration-gitops
-  name: tenant-integration-gitops
+    argocd.argoproj.io/managed-by: ircc-tenant-integration-gitops
+  name: ircc-tenant-integration-gitops

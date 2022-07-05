@@ -6,5 +6,5 @@ metadata:
     ircc.gc.ca/environment: dev
     ircc.gc.ca/team: journeylab
     # TODO Move to environment layer
-    argocd.argoproj.io/managed-by: tenant-journeylab-gitops 
+    argocd.argoproj.io/managed-by: ircc-tenant-journeylab-gitops 
 spec: {}

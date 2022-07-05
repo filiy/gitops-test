@@ -11,7 +11,7 @@ patches:
   patch: |-
     - op: replace
       path: /metadata/name
-      value: 'tenant-integration-gitops'
+      value: 'ircc-tenant-integration-gitops'
 
 patchesStrategicMerge:
 - gitops.yaml

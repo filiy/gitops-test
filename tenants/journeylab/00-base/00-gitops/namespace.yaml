@@ -5,5 +5,5 @@ metadata:
     openshift.io/description: journeylab Argo CD instance.
     openshift.io/display-name: journeylab GitOps
   labels:
-    argocd.argoproj.io/managed-by: tenant-journeylab-gitops
-  name: tenant-journeylab-gitops
+    argocd.argoproj.io/managed-by: ircc-tenant-journeylab-gitops
+  name: ircc-tenant-journeylab-gitops

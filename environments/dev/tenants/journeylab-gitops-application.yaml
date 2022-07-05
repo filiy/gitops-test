@@ -5,11 +5,11 @@ metadata:
     argocd.argoproj.io/sync-wave: "20"
   labels:
     gitops.ownedBy: cluster-config
-  name: tenant-journeylab-gitops
+  name: ircc-tenant-journeylab-gitops
   namespace: openshift-gitops
 spec:
   destination:
-    namespace: tenant-journeylab-gitops
+    namespace: ircc-tenant-journeylab-gitops
     server: https://kubernetes.default.svc
   project: default
   source:

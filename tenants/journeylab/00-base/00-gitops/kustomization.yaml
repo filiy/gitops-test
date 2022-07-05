@@ -17,7 +17,7 @@ patches:
   patch: |-
     - op: replace
       path: /metadata/namespace
-      value: 'tenant-journeylab-gitops'
+      value: 'ircc-tenant-journeylab-gitops'
     - op: replace
       path: /spec/rbac/policy
       value: 'g, openshift-gitops-admins, role:admin'      

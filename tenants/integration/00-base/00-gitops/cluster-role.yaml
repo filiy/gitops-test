@@ -3,7 +3,7 @@ kind: ClusterRole
 metadata:
   annotations:
     argocd.argoproj.io/sync-options: Prune=false
-  name: tenant-integration-gitops-argocd-extended-clusterrole
+  name: ircc-tenant-integration-gitops-argocd-extended-clusterrole
 rules:
   - apiGroups:
     - kafka.strimzi.io

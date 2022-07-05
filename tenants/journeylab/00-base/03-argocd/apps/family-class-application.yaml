@@ -10,7 +10,7 @@ spec:
   destination:
     namespace: openshift-gitops
     server: https://kubernetes.default.svc
-  project: tenant-journeylab-app-project
+  project: ircc-tenant-journeylab-app-project
   source:
     path: journeylab-family-class/environment/dev
     repoURL: https://github.com/davidgaulin/tmp-journeylab-gitops.git

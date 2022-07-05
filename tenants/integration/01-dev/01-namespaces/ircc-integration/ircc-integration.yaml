@@ -5,7 +5,7 @@ metadata:
   labels:
     ircc.gc.ca/environment: dev
     ircc.gc.ca/team: ircc-integration
-    argocd.argoproj.io/managed-by: tenant-integration-gitops 
+    argocd.argoproj.io/managed-by: ircc-tenant-integration-gitops 
 spec: {}
 ---
 
