@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: project-quota
+  namespace: ircc-integration-elasticsearch-eck
+spec:
+  hard:
+    pods: "50" 
+    requests.cpu: "18" 
+    requests.memory: 28Gi 
+    limits.cpu: "24" 
+    limits.memory: 64Gi
+    requests.storage: "200G"

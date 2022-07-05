@@ -1,0 +1,9 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: ircc-integration-elasticsearch-eck
+  labels:
+    ircc.gc.ca/environment: dev
+    ircc.gc.ca/team: ircc-integration
+    argocd.argoproj.io/managed-by: ircc-tenant-integration-gitops     
+spec: {}
