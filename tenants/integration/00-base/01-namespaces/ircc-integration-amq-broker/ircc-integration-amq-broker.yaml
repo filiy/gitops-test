@@ -1,0 +1,9 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: ircc-integration-amq-broker
+  labels:
+    ircc.gc.ca/environment: dev
+    ircc.gc.ca/team: ircc-integration
+    argocd.argoproj.io/managed-by: tenant-integration-gitops     
+spec: {}

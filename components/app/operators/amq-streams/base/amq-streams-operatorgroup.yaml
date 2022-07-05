@@ -1,8 +1,7 @@
 apiVersion: operators.coreos.com/v1
 kind: OperatorGroup
 metadata:
-  name: ircc-integration-amq-streams
-  namespace: ircc-integration-amq-streams
+  name: amq-streams-operator-group
+  namespace: openshift-operators
 spec:
   targetNamespaces:
-    - ircc-integration-amq-streams
