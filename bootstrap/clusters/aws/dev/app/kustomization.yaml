@@ -8,8 +8,8 @@ resources:
 - ../../../../../environments/dev/argocd/apps/namespaces
 
 # Operators installed for the Integration Team
-- ../../../../../environments/dev/argocd/apps/operators/amq-broker
-- ../../../../../environments/dev/argocd/apps/operators/amq-streams
+- ../../../../../components/argocd/apps/operators/amq-broker/base
+- ../../../../../components/argocd/apps/operators/amq-streams/base
 
 # Tekton - Openshift Pipeline - DEV only
 - ../../../../../components/argocd/apps/operators/pipelines/base
