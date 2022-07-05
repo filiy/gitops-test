@@ -16,5 +16,5 @@ patches:
     name: project-quota
   patch: |-
     - op: replace
-      path: /spec/hard/request.storage
+      path: /spec/hard/requests.storage
       value: '200G'
