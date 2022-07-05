@@ -6,4 +6,4 @@ commonAnnotations:
 
 resources:
 - github.com/davidgaulin/tmp-gitops-catalog/amq-streams-operator/overlays/amq-streams-2.1.x?ref=HEAD
-- amq-streams-operatorgroup.yaml
+#- amq-streams-operatorgroup.yaml
