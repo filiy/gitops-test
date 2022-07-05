@@ -9,3 +9,12 @@ bases:
 resources:
 - ircc-integration-amq-broker.yaml
 
+# AMQ Needs 200GB out of the box
+patches:
+- target:
+    kind: ResourceQuota
+    name: project-quota
+  patch: |-
+    - op: replace
+      path: /spec/hard/request.storage
+      value: '200G'
