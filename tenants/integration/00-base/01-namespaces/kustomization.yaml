@@ -5,3 +5,4 @@ resources:
 - ircc-integration-cumulus/
 - ircc-integration-amq-broker/
 - ircc-integration-amq-streams/
+- ircc-integration-elasticsearch-eck/

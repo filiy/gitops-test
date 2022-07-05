@@ -33,3 +33,11 @@ patches:
     - op: replace
       path: /spec/source/path
       value: ircc-integration-amq-streams/environment/dev 
+
+- target:
+    kind: Application
+    name: ircc-integration-elasticsearch-eck-application
+  patch: |-
+    - op: replace
+      path: /spec/source/path
+      value: ircc-integration-elasticsearch-eck/environment/dev 

@@ -5,3 +5,4 @@ resources:
 - ircc-integration-cumulus-application.yaml
 - ircc-integration-amq-broker-application.yaml
 - ircc-integration-amq-streams-application.yaml
+- ircc-integration-elasticsearch-eck-application.yaml
