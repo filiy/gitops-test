@@ -1,3 +1,5 @@
-In dev we are adding many namespaces that won't make it in other environment.
+# Introduction
 
-We are creating an ArgoCD app for those namespaces as we don't expect them to be managed thru ArgoCD.  If they are to be then we could add an ArgoCD app for them.  
+In the dev environment we are adding many namespaces for testing purposes only.  They won't make it to other environments.
+
+We may or may not add an ArgoCD app for each of those namespaces. If the namespace is more of a sandbox for someone to test thing, we don't.  If it is more a developement, testing, or pipeline related namespaces, we do.  
