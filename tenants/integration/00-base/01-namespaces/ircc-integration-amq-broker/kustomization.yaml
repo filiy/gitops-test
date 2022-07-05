@@ -9,3 +9,12 @@ bases:
 resources:
 - ircc-integration-amq-broker.yaml
 
+
+patches:
+- target:
+    kind: ResourceQuota
+    name: project-quota
+  patch: |-
+    - op: replace
+      path: /spec/hard/requests.storage
+      value: '200G'
