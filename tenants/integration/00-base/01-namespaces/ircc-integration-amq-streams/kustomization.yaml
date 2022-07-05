@@ -1,6 +1,9 @@
 kind: Kustomization
 apiVersion: kustomize.config.k8s.io/v1beta1
 
+# Because the requirements for this namespace are big and specific
+# we are not using the tshirt size base namespaces that we usually do
+
 namespace: ircc-integration-amq-streams
 
 resources:
