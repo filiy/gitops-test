@@ -5,23 +5,23 @@ resources:
 - ../../../../../environments/dev/argocd/apps/operators/gitops
 
 # Namespaces for this environment
-# - ../../../../../environments/dev/argocd/apps/namespaces
+- ../../../../../environments/dev/argocd/apps/namespaces
 
 # Operators installed for the Integration Team
-#- ../../../../../environments/dev/argocd/apps/operators/amq-broker
-#- ../../../../../environments/dev/argocd/apps/operators/amq-streams
+- ../../../../../environments/dev/argocd/apps/operators/amq-broker
+- ../../../../../environments/dev/argocd/apps/operators/amq-streams
 
 # Tekton - Openshift Pipeline - DEV only
-# - ../../../../../components/argocd/apps/operators/pipelines/base
+- ../../../../../components/argocd/apps/operators/pipelines/base
 
 # Yaks. Integration Testing tool - DEV Only
-# - ../../../../../components/argocd/apps/operators/yaks/base
+- ../../../../../components/argocd/apps/operators/yaks/base
 
 # List of Tenants to onboard
-# - ../../../../../environments/dev/tenants/
+- ../../../../../environments/dev/tenants/
 
 
 # Cluster Configs
-#- ../../../../../environments/dev/argocd/apps/cluster-config/infra-machineset
-#- ../../../../../components/argocd/apps/cluster-config/ingress-controller/base
-#- ../../../../../environments/dev/argocd/apps/cluster-config/registry
+- ../../../../../environments/dev/argocd/apps/cluster-config/infra-machineset
+- ../../../../../components/argocd/apps/cluster-config/ingress-controller/base
+- ../../../../../environments/dev/argocd/apps/cluster-config/registry
