@@ -5,4 +5,4 @@ commonAnnotations:
   argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 
 resources:
-- github.com/davidgaulin/tmp-gitops-catalog/amq-streams-operator/overlays/amq-streams-2.1.x?ref=HEAD
+- github.com/davidgaulin/tmp-gitops-catalog/elasticsearch-eck-operator/overlays/stable?ref=HEAD

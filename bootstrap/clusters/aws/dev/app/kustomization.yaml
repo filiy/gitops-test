@@ -10,6 +10,7 @@ resources:
 # Operators installed for the Integration Team
 - ../../../../../components/argocd/apps/operators/amq-broker/base
 - ../../../../../components/argocd/apps/operators/amq-streams/base
+- ../../../../../components/argocd/apps/operators/elasticsearch-eck/base
 
 # Tekton - Openshift Pipeline - DEV only
 - ../../../../../components/argocd/apps/operators/pipelines/base

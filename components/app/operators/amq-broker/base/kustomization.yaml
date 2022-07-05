@@ -5,5 +5,4 @@ commonAnnotations:
   argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 
 resources:
-# - amq-broker-operatorgroup.yaml
 - github.com/davidgaulin/tmp-gitops-catalog/amq-broker-operator/overlays/amq-broker-7.x?ref=HEAD
