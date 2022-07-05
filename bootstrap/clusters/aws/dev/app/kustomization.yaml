@@ -22,6 +22,6 @@ resources:
 
 
 # Cluster Configs
-- ../../../../../environments/dev/argocd/apps/cluster-config/infra-machineset
-- ../../../../../components/argocd/apps/cluster-config/ingress-controller/base
-- ../../../../../environments/dev/argocd/apps/cluster-config/registry
+#- ../../../../../environments/dev/argocd/apps/cluster-config/infra-machineset
+#- ../../../../../components/argocd/apps/cluster-config/ingress-controller/base
+#- ../../../../../environments/dev/argocd/apps/cluster-config/registry
