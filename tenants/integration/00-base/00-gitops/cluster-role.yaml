@@ -17,3 +17,9 @@ rules:
       - servicemonitors
     verbs:
       - '*'
+  - apiGroups:
+    - elasticsearch.k8s.elastic.co
+    resources:
+      - '*'
+    verbs:
+      - '*'      
