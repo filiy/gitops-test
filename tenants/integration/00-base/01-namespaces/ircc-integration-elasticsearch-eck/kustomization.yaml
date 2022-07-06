@@ -8,19 +8,21 @@ bases:
 
 resources:
 - ircc-integration-elasticsearch-eck.yaml
+- ircc-integration-elasticsearch-eck-quotas.yaml
+- network-policy.yaml
 
 # Quota adjustment required - To be revisited on usage
-patches:
-- target:
-    kind: ResourceQuota
-    name: project-quota
-  patch: |-
-    - op: replace
-      path: /spec/hard/requests.cpu
-      value: 18
-    - op: replace
-      path: /spec/hard/limits.cpu
-      value: 24
-    - op: replace
-      path: /spec/hard/limits.memory
-      value: 64Gi
+# patches:
+# - target:
+#     kind: ResourceQuota
+#     name: project-quota
+#   patch: |-
+#     - op: replace
+#       path: /spec/hard/requests.cpu
+#       value: 18
+#     - op: replace
+#       path: /spec/hard/limits.cpu
+#       value: 24
+#     - op: replace
+#       path: /spec/hard/limits.memory
+#       value: 64Gi
