@@ -3,14 +3,20 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 
 namespace: ircc-integration-elasticsearch-eck
 
-# bases:
-# - ../../../../../components/app/namespaces/large
-
 resources:
 - ircc-integration-elasticsearch-eck.yaml
 - ircc-integration-elasticsearch-eck-quotas.yaml
-- network-policy.yaml
 - limit-range.yaml
+
+# TODO - 808849 - We need to figure out why standard network policy are breaking this setup
+# Once 808849 is complete, the configuration below should do the trick
+
+
+# bases:
+# - ../../../../../components/app/namespaces/large
+
+# resources:
+# - ircc-integration-elasticsearch-eck.yaml
 
 # Quota adjustment required - To be revisited on usage
 # patches:
