@@ -10,6 +10,7 @@ resources:
 - ircc-integration-elasticsearch-eck.yaml
 - ircc-integration-elasticsearch-eck-quotas.yaml
 - network-policy.yaml
+- limit-range.yaml
 
 # Quota adjustment required - To be revisited on usage
 # patches:
