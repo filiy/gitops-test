@@ -5,8 +5,7 @@ commonAnnotations:
   argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 
 resources:
-- yaks-operator-group.yaml
-- github.com/davidgaulin/tmp-gitops-catalog/yaks/overlays/alpha?ref=HEAD
+- github.com/davidgaulin/tmp-gitops-catalog/yaks-operator/overlays/alpha?ref=HEAD
 
 patches:
 - target:
