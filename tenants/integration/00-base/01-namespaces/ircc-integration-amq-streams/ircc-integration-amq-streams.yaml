@@ -86,3 +86,4 @@ spec:
     limits.cpu: "32" 
     limits.memory: 64Gi
     requests.storage: "200G"
+    limit.storage: "400G"
