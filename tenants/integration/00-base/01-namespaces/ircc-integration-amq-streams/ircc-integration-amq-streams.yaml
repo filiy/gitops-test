@@ -85,4 +85,4 @@ spec:
     requests.memory: 64Gi 
     limits.cpu: "32" 
     limits.memory: 64Gi
-    requests.storage: "100Gi"
+    requests.storage: "200Gi"
