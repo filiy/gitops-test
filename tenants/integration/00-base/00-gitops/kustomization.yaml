@@ -7,7 +7,6 @@ bases:
 resources:
 - cluster-role.yaml
 - cluster-role-binding.yaml
-- app-project.yaml
 - namespace.yaml
 
 patches:
