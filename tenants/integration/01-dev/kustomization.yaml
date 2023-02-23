@@ -6,7 +6,6 @@ bases:
 
 resources:
   - 01-namespaces
-  - 03-argocd/apps
 
 # Patching the argocd application from base to point to dev
 patches:
@@ -17,27 +16,3 @@ patches:
     - op: replace
       path: /spec/source/path
       value: ircc-integration-cumulus/environment/dev
-
-- target:
-    kind: Application
-    name: ircc-integration-amq-broker-application
-  patch: |-
-    - op: replace
-      path: /spec/source/path
-      value: ircc-integration-amq-broker/environment/dev
-
-- target:
-    kind: Application
-    name: ircc-integration-amq-streams-application
-  patch: |-
-    - op: replace
-      path: /spec/source/path
-      value: ircc-integration-amq-streams/environment/dev 
-
-- target:
-    kind: Application
-    name: ircc-integration-elasticsearch-eck-application
-  patch: |-
-    - op: replace
-      path: /spec/source/path
-      value: ircc-integration-elasticsearch-eck/environment/dev 

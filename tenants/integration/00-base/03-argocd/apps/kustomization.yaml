@@ -1,8 +1,0 @@
-kind: Kustomization
-apiVersion: kustomize.config.k8s.io/v1beta1
-
-resources:
-- ircc-integration-cumulus-application.yaml
-- ircc-integration-amq-broker-application.yaml
-- ircc-integration-amq-streams-application.yaml
-- ircc-integration-elasticsearch-eck-application.yaml
