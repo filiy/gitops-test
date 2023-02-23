@@ -8,19 +8,6 @@ resources:
 
 # Sandboxes
 - ircc-integration-cumulus-namespace-added-role.yaml
-- ircc-integration-sandbox-constant-carmai/
-- ircc-integration-sandbox-daniel-taylor/
-- ircc-integration-sandbox-elgin-jessica/
-- ircc-integration-sandbox-jovovic-stefan/
-- ircc-integration-sandbox-kanumuri-subbarao/
-- ircc-integration-sandbox-kirnishni-vladimir/
-- ircc-integration-sandbox-langevin-yves/
-- ircc-integration-sandbox-ma-matthew/
-- ircc-integration-sandbox-mantha-gerry/
-- ircc-integration-sandbox-navid-mahesaniya/
-- ircc-integration-sandbox-prevost-michel/
-- ircc-integration-sandbox-richard-philip/
-- ircc-integration-sandbox-slim-rayan/
 
 # TODO Confirm what this namespace is for and if it should be in base
 - ircc-integration/
