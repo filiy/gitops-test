@@ -4,7 +4,4 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 resources:
 - 00-gitops
 - 01-namespaces
-<<<<<<< HEAD
 - 02-operators
-=======
->>>>>>> 16d50b5 (update)
